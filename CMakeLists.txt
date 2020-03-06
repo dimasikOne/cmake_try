@@ -4,7 +4,7 @@ project(cmake_train)
 
 # find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
-add_executable(cmake_train main.cpp)
+add_executable(cmake_train src/cmake_train.cpp)
 
 set_target_properties(cmake_train PROPERTIES
     CXX_STANDARD 14
