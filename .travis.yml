@@ -1,3 +1,3 @@
 language: c++
 compiler: gcc
-script: cmake_train.cpp
+sudo: false
