@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 
 project(cmake_train)
 
-find_package(Boost COMPONENTS unit_test_framework REQUIRED)
+# find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 add_executable(cmake_train main.cpp)
 
