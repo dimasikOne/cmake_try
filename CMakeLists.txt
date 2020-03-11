@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 
 project(cmake_train)
 
-add_executable(cmake_train scr/cmake_train.cpp)
+add_executable(cmake_train src/cmake_train.cpp)
 
 set_target_properties(cmake_train PROPERTIES
     CXX_STANDARD 14
@@ -18,7 +18,5 @@ else ()
         -Wall -Wextra -pedantic -Werror
     )
 endif()
-
-
 
 install(TARGETS cmake_train RUNTIME DESTINATION bin)
