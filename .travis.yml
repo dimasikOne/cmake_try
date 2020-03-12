@@ -1,4 +1,4 @@
-language: c++
+language: cpp
 compiler: gcc
 
 before_script:
@@ -19,3 +19,4 @@ deploy:
   skip_cleanup: true
   script:
   - curl -T cmake_train-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -udustydumb:$BINTRAY_API_KEY "https://api.bintray.com/content/dustydumb/cmake_task/cmake_try/$TRAVIS_BUILD_NUMBER/cmake_train-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+
