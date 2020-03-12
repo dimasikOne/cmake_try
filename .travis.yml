@@ -2,13 +2,9 @@ language: c++
 compiler: gcc
 
 before_script:
-        # create a build folder for the out-of source-build
-        - mkdir build
-        # switch to build dir
-        - cd build
-        # run cmake, that is located in top-level dir
-        - cmake ..
-
+        - cmake .
+        - cmake --build .
+        - cmake --build . --target package
 script:
         - make
 
