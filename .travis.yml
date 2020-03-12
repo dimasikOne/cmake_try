@@ -7,7 +7,8 @@ before_script:
         # switch to build dir
         - cd build
         # run cmake, that is located in top-level dir
-        - cmake ..
+        - cmake .
+        - cmake --build .
 
 script:
         - make
